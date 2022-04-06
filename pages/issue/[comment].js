@@ -47,7 +47,7 @@ export default function Comments() {
                             <div className={styles.card} key={index}>
                                 <div className={styles.commentInfo}>
                                     <h3>{comment.user.login}</h3>
-                                    <Image src={comment.user.avatar_url} alt="" />
+                                    <Image src={comment.user.avatar_url} alt="" width="50px" height="50px" />
                                 </div>
                                 <p >{comment.body}</p>
                             </div>
@@ -61,4 +61,6 @@ export default function Comments() {
         </div>
     )
 }
+
+
 
