@@ -23,8 +23,8 @@ const IssuesData = ({ data }) => {
                                 <a>
                                     <h3>Title:<span> {item.title}</span></h3>
                                     <p>Assignee:<span>{item.user.login}</span></p>
+                                    <Image width="50px" height="50px" src={item.user.avatar_url} alt="" />
                                     <p>Comments: <span>{item.comments}</span></p>
-                                    <Image src={item.user.avatar_url} alt="" />
                                 </a>
                             </Link>
                         </li>
